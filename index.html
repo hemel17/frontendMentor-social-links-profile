@@ -32,11 +32,11 @@
               Green: "hsl(75, 94%, 57%)",
               White: "hsl(0, 0%, 100%)",
               Grey: "hsl(0, 0%, 20%)",
-              DardGrey: "hsl(0, 0%, 12%)",
+              DarkGrey: "hsl(0, 0%, 12%)",
               OffBlack: "hsl(0, 0%, 8%)",
             },
             fontFamily: {
-              Inter: ['Inter, sans-serif'],
+              Inter: ["Inter, sans-serif"],
             },
           },
         },
@@ -45,18 +45,27 @@
 
     <title>Frontend Mentor | Social links profile</title>
   </head>
-  <body class="flex justify-center items-center font-Inter min-h-screen">
+  <body
+    class="flex justify-center items-center font-Inter min-h-screen text-center bg-OffBlack"
+  >
     <main>
-      <div>
-        <h2>Jessica Randall</h2>
-        <p>London, United Kingdom</p> "Front-end developer and avid
-        reader." GitHub Frontend Mentor LinkedIn Twitter Instagram
+      <div class="bg-DarkGrey p-5 md:p-10 rounded-xl">
+        <h2 class="font-semibold text-2xl text-White">Jessica Randall</h2>
+        <address class="text-Green text-sm">London, United Kingdom</address>
+        <p class="text-White text-sm my-5">"Front-end developer and avid reader."</p>
+        <ul class="text-White font-medium flex flex-col mx-5 gap-4">
+          <li class="bg-Grey hover:bg-Green hover:text-DarkGrey py-2 rounded-xl cursor-pointer">GitHub</li>
+          <li class="bg-Grey hover:bg-Green hover:text-DarkGrey py-2 rounded-xl cursor-pointer">Frontend Mentor</li>
+          <li class="bg-Grey hover:bg-Green hover:text-DarkGrey py-2 rounded-xl cursor-pointer">LinkedIn</li>
+          <li class="bg-Grey hover:bg-Green hover:text-DarkGrey py-2 rounded-xl cursor-pointer">Twitter</li>
+          <li class="bg-Grey hover:bg-Green hover:text-DarkGrey py-2 rounded-xl cursor-pointer">Instagram</li>
+        </ul>
 
-        <div class="attribution">
+        <div class="mt-5 text-White text-xs">
           Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-sm"
             >Frontend Mentor</a
-          >. Coded by <a href="#">Your Name Here</a>.
+          >. Coded by <a href="https://github.com/hemel17" class="text-sm">Hemel</a>.
         </div>
       </div>
     </main>
